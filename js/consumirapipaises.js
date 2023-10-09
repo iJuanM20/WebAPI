@@ -20,11 +20,15 @@ function poblarDatosPaises() {
            var fila = tabla.insertRow(-1);
            var columnaNombre = fila.insertCell(0);
            var columnaCapital = fila.insertCell(1);
-           var columnaRegion = fila.insertCell(2);
+           var columnaMoneda = fila.insertCell(2);
+           var columnaBanderas = fila.insertCell(3);
+           var columnaPoblacion = fila.insertCell(4);
 
            columnaNombre.innerHTML = pais.name.official;
            columnaCapital.innerHTML = pais.capital[0];
-           columnaRegion.innerHTML = pais.region;
+           columnaMoneda.innerHTML = pais.currencies;
+           columnaBanderas.innerHTML = pais.flags.png;
+           columnaPoblacion.innerHTML = pais.population;
 
         }
 
