@@ -5,7 +5,7 @@ function crearNodo(tipoNodo) {
 
 }
 
-function crearNodoTexto(tipoNodo, texto) {
+function crearNodoTexto(tipoNodo,texto) {
 
   var nodo = crearNodo(tipoNodo);
   var textoNodo = document.createTextNode(texto);
@@ -14,7 +14,7 @@ function crearNodoTexto(tipoNodo, texto) {
 
 }
 
-function crearNodoImagen(url, alt) {
+function crearNodoImagen(url,alt) {
 
   var nodo = crearNodo("img");
   nodo.src = url;
@@ -25,7 +25,7 @@ function crearNodoImagen(url, alt) {
 
 function adicionarNodoContenedor(contenedor,nodo) {
 
-  document.body.appendChild(nodo);
+  contenedor.appendChild(nodo);
 }
 
 function crearNodoA(texto, href){
